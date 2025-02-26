@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1220px;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    animation-name: lyuboyNom;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    position: relative;
+}
+
+@keyframes lyuboyNom {
+    0%{
+        background-color: black;
+        top: 0;
+        left: 0;
+    }
+    25%{
+        background-color: red;
+        top: 0;
+        left: 1000px;
+    }
+    50%{
+        background-color: blue;
+        top: 300px;
+        left: 1000px;
+    }
+    75%{
+        background-color: yellow;
+        top: 300px;
+        left: 0;
+    }
+    100%{
+        background-color: aqua;
+        top: 0;
+        left: 0;
+    }
+} 
